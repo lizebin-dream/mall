@@ -1,27 +1,20 @@
 <template>
-  <div id="home">
-    <nav-bar class="home-nav">
-      <div slot="center">购物街</div>
-    </nav-bar>
+  <div>
+    {{message}}
   </div>
 </template>
 
 <script>
-  import NavBar from 'common/navbar/NavBar'
-
   export default {
     name: "Home",
-    components: {
-      NavBar
-    }
+    data() {
+      return {
+        message: [{name: 'Home', age: 18}]
+      }
+    },
   }
 </script>
 
 <style scoped>
 
-  .home-nav {
-    color: #fff;
-    background-color: var(--color-tint);
-
-  }
 </style>

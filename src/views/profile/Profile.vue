@@ -1,12 +1,17 @@
 <template>
   <div>
-    Profile
+    {{message}}
   </div>
 </template>
 
 <script>
   export default {
-    name: "Profile"
+    name: "Profile",
+    data() {
+      return {
+        message: [{name: 'Profile', age: 18}]
+      }
+    },
   }
 </script>
 
